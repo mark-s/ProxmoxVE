@@ -2,7 +2,7 @@
 
 # Copyright (c) 2021-2026 community-scripts ORG
 # Author: [YourGitHubUsername]
-# License: MIT | https://github.com/community-scripts/ProxmoxVE/raw/main/LICENSE
+# License: MIT | https://github.com/mark-s/ProxmoxVE/raw/main/LICENSE
 # Source: https://github.com/ankitects/anki
 
 source /dev/stdin <<<"$FUNCTIONS_FILE_PATH"

@@ -2,7 +2,7 @@
 source <(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/misc/build.func)
 # Copyright (c) 2021-2026 community-scripts ORG
 # Author: Mark Staff (mark-s)
-# License: MIT | https://github.com/community-scripts/ProxmoxVE/raw/main/LICENSE
+# License: MIT | https://github.com/mark-s/ProxmoxVE/raw/main/LICENSE
 # Source: https://github.com/ankitects/anki
 
 APP="Anki Sync Server"
