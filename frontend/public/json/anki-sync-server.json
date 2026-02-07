@@ -1,0 +1,42 @@
+{
+  "name": "Anki Sync Server",
+  "slug": "anki-sync-server",
+  "categories": [12],
+  "date_created": "2026-02-07",
+  "type": "ct",
+  "updateable": true,
+  "privileged": false,
+  "interface_port": 8080,
+  "documentation": "https://docs.ankiweb.net/sync-server.html",
+  "website": "https://apps.ankiweb.net/",
+  "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons@main/webp/anki.webp",
+  "config_path": "/opt/anki-sync-server/.env",
+  "description": "A self-hosted Anki sync server that allows syncing flashcards across devices without relying on AnkiWeb.",
+  "install_methods": [
+    {
+      "type": "default",
+      "script": "ct/anki-sync-server.sh",
+      "resources": {
+        "cpu": 1,
+        "ram": 1024,
+        "hdd": 4,
+        "os": "Debian",
+        "version": "13"
+      }
+    }
+  ],
+  "default_credentials": {
+    "username": "admin",
+    "password": "Generated during install (see /opt/anki-sync-server/.env)"
+  },
+  "notes": [
+    {
+      "text": "Credentials are stored in /opt/anki-sync-server/.env (SYNC_USER1=username:password). Add more users with SYNC_USER2, SYNC_USER3, etc.",
+      "type": "info"
+    },
+    {
+      "text": "Configure Anki clients: Tools > Preferences > Syncing > Self-hosted sync server, enter http://<IP>:8080/",
+      "type": "info"
+    }
+  ]
+}
